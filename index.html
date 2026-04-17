@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PROdutividae</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1 id="nome">PROduti <br>vidade</h1>
+  <button onclick="toggleTheme()">🌗</button>
+</header>
+
+<main>
+
+<section class="card destaque">
+  <h2>⏱ Foco</h2>
+  <div id="timer">25:00</div>
+  <div class="btn-group">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+</section>
+
+<section class="card">
+    <h2>
+        <img src="icones/cale.png" class="icon">
+        Meta do dia 
+      </h2>
+  <input type="date" id="date">
+  <input id="metaInput" placeholder="Nova meta...">
+  <button onclick="addMeta()">Adicionar</button>
+  <ul id="metaList"></ul>
+</section>
+
+<section class="card">
+    <h2>
+        <img src="icones/diario.png" class="icon">
+       Diário
+      </h2>
+
+  <textarea id="q1" placeholder="O que fiz bem?"></textarea>
+  <textarea id="q2" placeholder="Onde perdi tempo?"></textarea>
+  <textarea id="q3" placeholder="Como melhorar?"></textarea>
+  <textarea id="q4" placeholder="O que aprendi?"></textarea>
+
+  <textarea id="summary" placeholder="📌 Resumo do dia"></textarea>
+  <h2>
+    <img src="icones/revi.png" class="icon">
+   Revisar em:
+  </h2>
+
+  <input type="date" id="reviewDate">
+  <button onclick="saveDiary()">Salvar</button>
+</section>
+
+<section class="card">
+    <h2>
+        <img src="icones/rr.png" class="icon">
+        Revisão 
+      </h2>
+  <ul id="reviewList"></ul>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
